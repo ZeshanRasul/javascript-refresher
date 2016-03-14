@@ -1,26 +1,39 @@
 var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
-}
+  var results = [];
+  for (var i = 0; i < array.length; i++){
+    if (array[i].charAt(0) === 'a' || array[i].charAt(0) === 'A'){
+      results.push(array[i]);
+    }
+  }
+  return results;
+};
 
-var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
-}
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
-}
+  var results = [];
+  for (var i = 0; i < array.length; i++){
+    if (array[i].charAt(0) === 'a' || array[i].charAt(0) === 'e' || array[i].charAt(0) === 'i' || array[i].charAt(0) === 'o' || array[i].charAt(0) === 'u'){
+      results.push(array[i]);
+    }
+  }
+  return results;
+};
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
-}
+  return array.filter(function(n){ return n !== null; });
+};
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
-}
+  return array.filter(function(n){ return n !== null && n !== false; });
+};
 
 var reverseWordsInArray = function(array) {
-  return 'Write your method here';
-}
+  var results = [];
+  for (var i = 0; i < array.length; i++) {
+    results.push(array[i].split('').reverse().join(''));
+  }
+  return results;
+};
 
 var everyPossiblePair = function(array) {
   return 'Write your method here';
